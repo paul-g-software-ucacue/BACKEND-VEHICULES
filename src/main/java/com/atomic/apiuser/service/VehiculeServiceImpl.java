@@ -79,7 +79,7 @@ public class VehiculeServiceImpl implements VehiculeService {
         vehiculeEntity.setYear(vehicule.getYear());
         vehiculeEntity.setFuelType(vehicule.getFuelType());
         vehiculeEntity.setOwner(vehicule.getOwner());
-        
+
         return vehiculeEntityMapper.toDomain(vehiculeRepository.save(vehiculeEntity));
     }
 
